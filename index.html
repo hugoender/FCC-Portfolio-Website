@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html >
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Zipline: Build a Personal Portfolio Webpage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+<!--    <link rel="stylesheet" href="css/bootstrap.css">-->
 <!--    <link rel="stylesheet" href="css/fontawesome.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<!--    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>-->
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 
     <link rel="stylesheet" href="css/style.css">
     
   </head>
 
-  <body>
+<body>
 
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-default navbar-static-top animated fadeInUp">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -28,7 +28,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-       <div class="img-brand"> <img class="img-circle img-brand" src="http://www.smugmug.com/photos/i-PF87VBh/0/M/i-PF87VBh-M.jpg"></img></div>
+       <div class="img-brand"> <img alt="brand logo" class="img-circle img-brand" src="http://www.smugmug.com/photos/i-PF87VBh/0/M/i-PF87VBh-M.jpg"></img></div>
       Hugo <strong>Garcia</strong>
       </a>
     </div>
@@ -38,9 +38,9 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><strong>Home</strong></a></li>
-        <li><a href="#"><strong>About</strong></a></li>
-        <li><a href="#"><strong>Portfolio</strong></a></li>
-        <li><a href="#"><strong>Contact</strong></a></li>
+        <li><a href="#about"><strong>About</strong></a></li>
+        <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
+        <li><a href="#contact"><strong>Contact</strong></a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -48,13 +48,85 @@
   <!-- /.container-fluid -->
 </nav>
 
-<div class="container-fluid jumbotron">
-  <p class="text-center jumbo-main"><strong>Puerto Rico Island Design Studio</strong></p>
-  <p class="text-center jumbo-sub">Where La Isla Bonita Brings Your Dreams To Life.</p>
+<div class="container-fluid jumbotron animated fadeInUp">
+  <p class="text-center jumbo-main-center"><strong>Puerto Rico Island Design Studio</strong></p>
+  <p class="text-center jumbo-sub-center">Where La Isla Bonita Brings Your Dreams To Life.</p>
+  
   <div><hr /></div>
-  <div>
-    <a class="btn btn-default" href="#" role="button">
-      <span class="fa fa-twitter"></span><strong> Twitter</strong></a>
+  
+  <div class="text-center">
+    
+    <a class="btn btn-default btn-social" href="https://github.com/hugoender/" role="button">
+      <span class="fa fa-github"></span><strong> Github</strong>
+    </a>
+  
+    <a class="btn btn-default btn-social" href="https://www.linkedin.com/in/hugogarcia1" role="button">
+      <span class="fa fa-linkedin"></span><strong> LinkedIn</strong>
+    </a>
+    
+    <a class="btn btn-default btn-social" href="http://freecodecamp.com/hugoender" role="button">
+      <span class="fa fa-fire"></span><strong> FreeCodeCamp</strong>
+    </a>
+  
+  </div>
+</div>
+  
+<div class="container-fluid animated fadeInUp">
+  <div class="media about-me-text">
+    <a id="about" />
+    <div class="media-body">
+      <h1 class="media-heading">Puerto Rico Island Web Design</h1>
+      <h3>
+        <p>I'm a <a href="http://freecodecamp.com/hugoender">self taught</a> web designer, developer, co-founder and entrepreneur based in Miami. </p>
+        <p>I'm currently part of a small web development team in an upcoming start-up, building web and mobile applications.</p>
+        <p>My passion is to use technology based solutions, to help solve real world challenges.</p>
+        Languages and Frameworks:
+        <ul>
+          <li>Javascript</li>
+          <li>HTML5</li> 
+          <li>CSS3</li>
+          <li>jQuery</li>
+          <li>Bootstrap3</li>
+          <li>Angular.js</li>
+          <li>Git</li>
+          <li>Responsive Web Design</li>
+          <li>Agile Methodologies</li>
+        </ul>
+      </h3>
+    </div>
+    <div class="media-right media-middle">
+      <img class="media-object" src="http://www.smugmug.com/photos/i-PF87VBh/0/M/i-PF87VBh-M.jpg" alt="Hugo's face">
+    </div>
+  </div>
+<!--
+  <div class="row about-me-text">
+    <div class="col-xs-12 col-sm-6">
+      <h1>Puerto Rico Island Web Design</h1>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus ex, accumsan posuere quam et, bibendum efficitur magna. Vivamus dictum sollicitudin magna eget iaculis. Etiam quis tellus ligula. Fusce vitae faucibus diam, quis euismod metus. In felis libero, pretium ac quam sed, mollis ultricies nisi. Fusce lacinia ante ligula, eget lacinia ligula sollicitudin ut. Etiam tincidunt ipsum felis, at tincidunt nisi fermentum viverra. Mauris cursus, odio aliquet ornare sollicitudin, orci urna commodo ligula, vitae venenatis enim ligula eget est. Aenean convallis sit amet elit vitae bibendum. Ut non ex vel nisl lacinia porttitor. Etiam id orci non leo aliquet tristique eu ac erat. Donec vitae eleifend justo.</h3>
+    </div>
+    <div class="hidden-xs col-sm-6">
+      <div class="media">
+        <div class="media-right media-middle">
+          <img class="media-object" src="http://www.smugmug.com/photos/i-PF87VBh/0/M/i-PF87VBh-M.jpg" alt="Hugo's face" />
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+</div>
+  
+<div class="container-fluid jumbotron2 animated fadeInUp">
+  <div class="row black-opacity">
+    <div class="col-xs-12"><a id="portfolio" />
+      <h2 class="text-center jumbo-main-center">My Projects</h2>
+    </div> 
+    
+    <div class="col-xs-6">
+      <figure class="hover-shine">
+        <a href="http://tinkerlings.com"><img src="/resources/tinkerlings-screenshot.jpg" alt="tinkerlings.com" class="img-thumbnail"></a>
+      </figure>
+      <h4 class="text-center jumbo-sub-center">Tinkerlings Ecommerce Website</h4>
+    </div>
   </div>
 </div>
     
@@ -62,5 +134,5 @@
 <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 <script src="js/index.js"></script>
     
-  </body>
+</body>
 </html>
